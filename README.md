@@ -9,7 +9,7 @@ solo los bloques necesarios para esta actividad.
 
 1. Abrir [makecode.microbit.org](https://makecode.microbit.org/) y crear un **proyecto nuevo**.
 2. Ir a **Extensiones** (engranaje ⚙️ → Extensiones).
-3. Pegar la URL **https://github.com/LOGOS-SmartTEAM/EXT3** y elegirla.
+3. Pegar la URL **https://github.com/smartteamok/EXT3** y elegirla.
 
 > Si un proyecto ya tenía EXT3 agregada de antes, queda fijado a la versión
 > vieja. Para ver la versión nueva: quitar la extensión y volver a
