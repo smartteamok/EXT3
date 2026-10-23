@@ -3,6 +3,7 @@
     "bloques.SabanaVelocidadCadena.Lenta|block": "lenta",
     "bloques.SabanaVelocidadCadena.Rapida|block": "rápida",
     "{id:group}SCREENS": "TELAS",
+    "bloques.robitLedRgbApagar|block": "ROBIT luzes RGB │ apagar",
     "bloques.robitGirar|block": "ROBIT │ Girar 90º para a %direccion",
     "bloques.SabanaRobitGiro.Izquierda|block": "↺ esquerda",
     "bloques.SabanaRobitGiro.Derecha|block": "↻ direita"

@@ -106,6 +106,29 @@ namespace bloques {
     }
 
     /**
+     * Apaga la tira RGB del chasis Robit. Brillo 0 en el registro 0x0A y
+     * color negro en 0x0B, los mismos que usa "ROBIT luces RGB │ color".
+     * El bloque de color vuelve a dejar el brillo en 255.
+     */
+    //% blockId=robit_led_rgb_apagar
+    //% block="ROBIT luces RGB │ apagar"
+    //% group="SALIDAS" color="#9C27B0" weight=100.5 blockGap=8
+    export function robitLedRgbApagar(): void {
+        let brilloBuff = pins.createBuffer(2)
+        brilloBuff.setNumber(NumberFormat.UInt8BE, 0, ROBIT_LED_BASE + 0x00)
+        brilloBuff.setNumber(NumberFormat.UInt8BE, 1, 0)
+        pins.i2cWriteBuffer(ROBIT_I2C_ADDR, brilloBuff)
+        basic.pause(20)
+
+        let colorBuff = pins.createBuffer(4)
+        colorBuff.setNumber(NumberFormat.UInt8BE, 0, ROBIT_LED_BASE + 0x01)
+        colorBuff.setNumber(NumberFormat.UInt8BE, 1, 0)
+        colorBuff.setNumber(NumberFormat.UInt8BE, 2, 0)
+        colorBuff.setNumber(NumberFormat.UInt8BE, 3, 0)
+        pins.i2cWriteBuffer(ROBIT_I2C_ADDR, colorBuff)
+    }
+
+    /**
      * Movimiento del chasis Robit por una distancia en cm (I2C 0x09). Solo
      * Avanzar/Retroceder. El bloque espera hasta que el robot termina.
      *

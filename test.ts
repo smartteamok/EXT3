@@ -2,6 +2,7 @@
 if (bloques.sueloLogico(bloques.suelo(SabanaPuerto.P0), bloques.SabanaEstadoSuelo.Seco)) {
     bloques.led(bloques.SabanaEstadoOnOff.ON, SabanaPuerto.P1)
     bloques.robitLedRgb(0xff0000)
+    bloques.robitLedRgbApagar()
 }
 bloques.robitMostrarCadena("HOLA", bloques.SabanaVelocidadCadena.Lenta)
 if (bloques.ultrasonidoRgbLogico(bloques.ultrasonidoRgb(), bloques.SabanaSiNo.Si)) {

@@ -3,7 +3,7 @@
 Extensión de MakeCode para micro:bit. Subconjunto de **STV2-PADRE** con
 solo los bloques necesarios para esta actividad.
 
-**Versión actual: 3.2.0**
+**Versión actual: 3.3.0**
 
 ## Cómo agregarla en MakeCode
 
@@ -31,6 +31,7 @@ aparecen las subcategorías (groups) con sus bloques.
 | SENSORES     | (ROBIT │ Ultrasonido) detecta objeto: Si / No — 3 a 25 cm | `#9C27B0` |
 | SENSORES     | (Sensor de Suelo) está seco / húmedo — seco < 400, húmedo ≥ 400 | `#006970` |
 | SALIDAS      | ROBIT luces RGB │ color (paleta) | `#9C27B0` |
+| SALIDAS      | ROBIT luces RGB │ apagar | `#9C27B0` |
 | SALIDAS      | LED │ Estado ON/OFF en pin P | `#FFB800` |
 | MOVIMIENTO   | ROBIT Avanzar / Retroceder │ Velocidad 0-100 por 0-50 cm | `#9C27B0` |
 | MOVIMIENTO   | ROBIT │ Girar 90º a la ↺ Izquierda / ↻ Derecha (velocidad 50) | `#9C27B0` |
@@ -54,6 +55,7 @@ Programación de los bloques Robit tomada de
 
 | Versión | Cambios |
 |---------|---------|
+| 3.3.0 | ROBIT luces RGB │ apagar, debajo del bloque de color. |
 | 3.2.0 | PANTALLAS: ROBIT mostrar cadena, con velocidad lenta/rápida (inglés, español y portugués). Girar pasa a "Girar 90º a la". |
 | 3.1.0 | Nueva versión para forzar la actualización en MakeCode (mismos bloques que 2.4.0). |
 | 2.4.0 | "Robit" pasa a "ROBIT". Ultrasonido: "(ROBIT │ Ultrasonido) detecta objeto: Si/No". LED: "ROBIT luces RGB │ color". Se quita ROBIT Frenar. |

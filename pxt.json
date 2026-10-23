@@ -1,6 +1,6 @@
 {
     "name": "ext3",
-    "version": "3.2.0",
+    "version": "3.3.0",
     "description": "EXT3 — subconjunto de STV2-PADRE para MakeCode micro:bit",
     "license": "MIT",
     "dependencies": {
