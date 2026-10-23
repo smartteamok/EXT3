@@ -161,7 +161,7 @@ namespace bloques {
      * lectura del estado en 0x91 hasta que valga 0.
      */
     //% blockId=robit_girar
-    //% block="ROBIT │ Girar a la %direccion"
+    //% block="ROBIT │ Girar 90º a la %direccion"
     //% group="MOVIMIENTO" color="#9C27B0" weight=100.5 blockGap=8
     export function robitGirar(direccion: SabanaRobitGiro): void {
         const velocidad = 50

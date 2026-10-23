@@ -1,6 +1,6 @@
 {
     "name": "ext3",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "description": "EXT3 — subconjunto de STV2-PADRE para MakeCode micro:bit",
     "license": "MIT",
     "dependencies": {
@@ -13,6 +13,10 @@
         "blocks/sabana/suelo.ts",
         "blocks/sabana/led.ts",
         "blocks/sabana/robit.ts",
+        "blocks/sabana/pantalla.ts",
+        "_locales/es-ES/ext3-strings.json",
+        "_locales/pt-BR/ext3-strings.json",
+        "_locales/pt-PT/ext3-strings.json",
         "main.blocks",
         "README.md"
     ],

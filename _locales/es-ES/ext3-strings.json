@@ -1,0 +1,6 @@
+{
+    "bloques.robitMostrarCadena|block": "ROBIT │ Mostrar cadena %texto con velocidad %velocidad",
+    "bloques.SabanaVelocidadCadena.Lenta|block": "lenta",
+    "bloques.SabanaVelocidadCadena.Rapida|block": "rápida",
+    "{id:group}SCREENS": "PANTALLAS"
+}
