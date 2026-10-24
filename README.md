@@ -3,7 +3,7 @@
 Extensión de MakeCode para micro:bit. Subconjunto de **STV2-PADRE** con
 solo los bloques necesarios para esta actividad.
 
-**Versión actual: 3.4.0**
+**Versión actual: 3.5.0**
 
 ## Cómo agregarla en MakeCode
 
@@ -28,7 +28,7 @@ aparecen las subcategorías (groups) con sus bloques.
 
 | Subcategoría | Bloque | Color |
 |--------------|--------|-------|
-| SENSORES     | (ROBIT │ Ultrasonido) detecta objeto: Si / No — 3 a 25 cm | `#9C27B0` |
+| SENSORES     | (ROBIT │ Ultrasonido) detecta objeto: Sí / No — 3 a 25 cm | `#9C27B0` |
 | SENSORES     | (Sensor de Suelo) está seco / húmedo — seco < 400, húmedo ≥ 400 | `#006970` |
 | SALIDAS      | ROBIT luces RGB │ color (paleta) | `#9C27B0` |
 | SALIDAS      | ROBIT luces RGB │ apagar | `#9C27B0` |
@@ -57,6 +57,7 @@ Programación de los bloques Robit tomada de
 
 | Versión | Cambios |
 |---------|---------|
+| 3.5.0 | Ultrasonido: el desplegable "Si" pasa a "Sí". |
 | 3.4.0 | MOVIMIENTO: ROBIT Avanzar/Retroceder a velocidad 50, y ROBIT Frenar, debajo de Girar. |
 | 3.3.0 | ROBIT luces RGB │ apagar, debajo del bloque de color. |
 | 3.2.0 | PANTALLAS: ROBIT mostrar cadena, con velocidad lenta/rápida (inglés, español y portugués). Girar pasa a "Girar 90º a la". |

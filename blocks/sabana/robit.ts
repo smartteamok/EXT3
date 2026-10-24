@@ -2,7 +2,7 @@ namespace bloques {
     // En EXT3 no están ultrasonido_logico.ts ni movimiento.ts, así que los
     // desplegables que usan estos bloques se definen aquí.
     export enum SabanaSiNo {
-        //% block="Si"
+        //% block="Sí"
         Si = 0,
         //% block="No"
         No = 1,
@@ -64,7 +64,7 @@ namespace bloques {
      * encajado por defecto dentro del hexágono, como shadow block.
      *
      * Umbral de detección igual que PA-12: 3 a 25 cm (inclusive), sobre la
-     * lectura en cm. "Si" = hay objeto, "No" = no hay objeto.
+     * lectura en cm. "Sí" = hay objeto, "No" = no hay objeto.
      */
     //% blockId=ultrasonido_rgb_logico
     //% block="%medida detecta objeto: %valor"

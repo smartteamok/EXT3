@@ -5,6 +5,7 @@
     "{id:group}SCREENS": "ECRÃS",
     "bloques.robitLedRgbApagar|block": "ROBIT luzes RGB │ apagar",
     "bloques.robitGirar|block": "ROBIT │ Girar 90º para a %direccion",
+    "bloques.SabanaSiNo.Si|block": "Sim",
     "bloques.SabanaAvanceRetroceso.Avanzar|block": "Avançar",
     "bloques.SabanaAvanceRetroceso.Retroceder|block": "Retroceder",
     "bloques.robitFrenar|block": "ROBIT Parar",
