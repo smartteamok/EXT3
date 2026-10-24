@@ -4,7 +4,8 @@
  * Bloques incluidos:
  *   SENSORES   → ROBIT Ultrasonido detecta objeto (Si/No), Suelo está seco/húmedo
  *   SALIDAS    → ROBIT luces RGB (color y apagar), LED ON/OFF
- *   MOVIMIENTO → ROBIT Avanzar/Retroceder por cm, ROBIT Girar 90º
+ *   MOVIMIENTO → ROBIT Avanzar/Retroceder por cm, ROBIT Girar 90º,
+ *                ROBIT Avanzar/Retroceder (velocidad 50), ROBIT Frenar
  *   PANTALLAS  → ROBIT Mostrar cadena (lenta/rápida)
  *
  * Estructura:

@@ -3,7 +3,7 @@
 Extensión de MakeCode para micro:bit. Subconjunto de **STV2-PADRE** con
 solo los bloques necesarios para esta actividad.
 
-**Versión actual: 3.3.0**
+**Versión actual: 3.4.0**
 
 ## Cómo agregarla en MakeCode
 
@@ -35,6 +35,8 @@ aparecen las subcategorías (groups) con sus bloques.
 | SALIDAS      | LED │ Estado ON/OFF en pin P | `#FFB800` |
 | MOVIMIENTO   | ROBIT Avanzar / Retroceder │ Velocidad 0-100 por 0-50 cm | `#9C27B0` |
 | MOVIMIENTO   | ROBIT │ Girar 90º a la ↺ Izquierda / ↻ Derecha (velocidad 50) | `#9C27B0` |
+| MOVIMIENTO   | ROBIT Avanzar / Retroceder (velocidad 50, sigue hasta Frenar) | `#9C27B0` |
+| MOVIMIENTO   | ROBIT Frenar | `#9C27B0` |
 | PANTALLAS    | ROBIT │ Mostrar cadena [HOLA] con velocidad lenta / rápida | `#9C27B0` |
 
 Los bloques redondos "ROBIT │ Ultrasonido" y "Sensor de
@@ -55,6 +57,7 @@ Programación de los bloques Robit tomada de
 
 | Versión | Cambios |
 |---------|---------|
+| 3.4.0 | MOVIMIENTO: ROBIT Avanzar/Retroceder a velocidad 50, y ROBIT Frenar, debajo de Girar. |
 | 3.3.0 | ROBIT luces RGB │ apagar, debajo del bloque de color. |
 | 3.2.0 | PANTALLAS: ROBIT mostrar cadena, con velocidad lenta/rápida (inglés, español y portugués). Girar pasa a "Girar 90º a la". |
 | 3.1.0 | Nueva versión para forzar la actualización en MakeCode (mismos bloques que 2.4.0). |

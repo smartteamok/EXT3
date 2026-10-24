@@ -212,6 +212,47 @@ namespace bloques {
         robitEsperarFin()
     }
 
+    /**
+     * Movimiento continuo del chasis, sin distancia. Sigue hasta que un
+     * bloque ROBIT Frenar lo detiene. No espera el fin: los comandos 1 y 2
+     * (logos-smart motionSpeed) no terminan solos. La velocidad es 50 fija.
+     * 5 y 6 quedan para el bloque por centímetros.
+     */
+    //% blockId=robit_movimiento
+    //% block="ROBIT %movimiento"
+    //% group="MOVIMIENTO" color="#9C27B0" weight=100 blockGap=8
+    export function robitMovimiento(movimiento: SabanaAvanceRetroceso): void {
+        const velocidad = 50
+        const tipo = movimiento == SabanaAvanceRetroceso.Avanzar ? 1 : 2
+
+        let spBuff = pins.createBuffer(5)
+        spBuff.setNumber(NumberFormat.UInt8BE, 0, ROBIT_MOTORES_BASE + 0x01)
+        spBuff.setNumber(NumberFormat.UInt8BE, 1, (velocidad >> 8) & 0xFF)
+        spBuff.setNumber(NumberFormat.UInt8BE, 2, velocidad & 0xFF)
+        spBuff.setNumber(NumberFormat.UInt8BE, 3, (velocidad >> 8) & 0xFF)
+        spBuff.setNumber(NumberFormat.UInt8BE, 4, velocidad & 0xFF)
+        pins.i2cWriteBuffer(ROBIT_I2C_ADDR, spBuff)
+
+        let cmdBuff = pins.createBuffer(2)
+        cmdBuff.setNumber(NumberFormat.UInt8BE, 0, ROBIT_MOTORES_BASE + 0x00)
+        cmdBuff.setNumber(NumberFormat.UInt8BE, 1, tipo)
+        pins.i2cWriteBuffer(ROBIT_I2C_ADDR, cmdBuff)
+    }
+
+    /**
+     * Detiene el chasis. Comando 0 en 0x8C, igual que logos-smart motionStop.
+     * No espera: el paro es inmediato.
+     */
+    //% blockId=robit_frenar
+    //% block="ROBIT Frenar"
+    //% group="MOVIMIENTO" color="#9C27B0" weight=99.5 blockGap=8
+    export function robitFrenar(): void {
+        let cmdBuff = pins.createBuffer(2)
+        cmdBuff.setNumber(NumberFormat.UInt8BE, 0, ROBIT_MOTORES_BASE + 0x00)
+        cmdBuff.setNumber(NumberFormat.UInt8BE, 1, 0)
+        pins.i2cWriteBuffer(ROBIT_I2C_ADDR, cmdBuff)
+    }
+
     // Espera (bloqueante) hasta que el chasis informa estado 0 en 0x91.
     function robitEsperarFin(): void {
         basic.pause(100)

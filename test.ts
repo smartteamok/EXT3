@@ -9,4 +9,6 @@ if (bloques.ultrasonidoRgbLogico(bloques.ultrasonidoRgb(), bloques.SabanaSiNo.Si
     bloques.robitGirar(bloques.SabanaRobitGiro.Derecha)
 } else {
     bloques.robitMovimientoCm(bloques.SabanaAvanceRetroceso.Avanzar, 50, 10)
+    bloques.robitMovimiento(bloques.SabanaAvanceRetroceso.Retroceder)
+    bloques.robitFrenar()
 }

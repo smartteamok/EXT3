@@ -5,6 +5,9 @@
     "{id:group}SCREENS": "ECRÃS",
     "bloques.robitLedRgbApagar|block": "ROBIT luzes RGB │ apagar",
     "bloques.robitGirar|block": "ROBIT │ Girar 90º para a %direccion",
+    "bloques.SabanaAvanceRetroceso.Avanzar|block": "Avançar",
+    "bloques.SabanaAvanceRetroceso.Retroceder|block": "Retroceder",
+    "bloques.robitFrenar|block": "ROBIT Parar",
     "bloques.SabanaRobitGiro.Izquierda|block": "↺ esquerda",
     "bloques.SabanaRobitGiro.Derecha|block": "↻ direita"
 }
